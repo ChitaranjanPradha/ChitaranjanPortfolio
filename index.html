@@ -10,15 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <nav>
-                <div class="profiles"><img class="profile" src="images\chitaProfile.png" alt=""></div>
-                <div class="navLeft">Chitaranjan's Portfolio</div>
-
+            <div class="profiles"><img class="profile" src="images\chitaProfile.png" alt=""></div>
+            <div class="navLeft">CHITARANJAN</div>
             <div class="navRight">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -31,7 +32,11 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My name is Chitaranjan and I am a full stack developer
+                Hi, My name is Chitaranjan and I am a passionate full stack developer <br>
+                <!-- <span class="talkAbout">Talk about </span><span id="element"></span> -->
+                <!-- <button class="btn btn-center">Download Resume</button> -->
+                <a href="files\Chitaranjan_Pradhan_Resume.pdf" class="btn" target="_blank">Resume <i
+                        class="fa-solid fa-circle-down"></i></a>
             </div>
             <div class="rightSection">
                 <img src="images\home-right.png" alt="">
@@ -44,10 +49,14 @@
                     <h1 class="about">About Me</h1>
                 </div>
                 Hey there! I'm Chitaranjan, a dedicated .NET Full Stack Developer with a passion for crafting digital
-                solutions. I thrive on transforming ideas into functional and user-friendly web applications. <br>
+                solutions.
+                <br>
+                I thrive on transforming ideas into functional and user-friendly web applications.
                 With a solid foundation in C# and ASP.NET, I specialize in creating seamless user experiences and robust
                 back-end systems. My journey began with a love for problem-solving and a desire to dive deep into coding
-                challenges. Over time, I've honed my skills to deliver efficient, maintainable, and innovative
+                challenges.
+                <br>
+                Over time, I've honed my skills to deliver efficient, maintainable, and innovative
                 solutions.
             </div><a name="about"></a>
             <div class="sRightSection">
@@ -55,15 +64,41 @@
             </div>
         </section>
 
+        <section class="experienceSection">
+            <!-- <div>
+                <div></div>
+            </div> -->
+            <div class="expLeft">
+                <h1 class="about">Exprience</h1>
+                <img src="images\experience.png" alt="">
+            </div>
+            <div class="expRight">
+                As a .NET full stack developer, my responsibilities included designing, developing, and maintaining web
+                applications and services using the .NET framework. I worked on both the front-end and back-end of web
+                applications, and collaborated with other team members, including developers, and project managers, to
+                deliver high-quality software solutions on time. Some of my specific responsibilities
+                and achievements as a .NET full stack developer include: <br>
+                - Designing and implementing the user interface of web applications using Angular. <br>
+                - Developing server-side code using .NET Core. <br>
+                - Developing RESTful APIs for web services. <br>
+                - Implementing data models and access layers using technologies like Entity Framework. <br>
+                - Implementing security measures to protect web applications and services from unauthorized access. <br>
+                - Setting up and configuring development, testing, and production environments.
+            </div>
+        </section>
+
         <section class="thirdSection">
-                <div>
-                    <a name="contact"><h1 class="getintouch">Get In Touch</h1></a>
-                </div>
+            <div>
+                <a name="contact">
+                    <h1 class="getintouch">Get In Touch</h1>
+                </a>
+            </div>
 
             <div class="contactFlex">
 
                 <div class="contactWidth">
-                    <div class="icons"><a href="mailto:chitaranjanpradhan33@gmail.com"><i class="fas fa-envelope"></i></a></div>
+                    <div class="icons"><a href="mailto:chitaranjanpradhan33@gmail.com"><i
+                                class="fas fa-envelope"></i></a></div>
                     <h3>EMAIL ADDRESS</h3>
                     <p>Chitaranjanpradhan33@gmail.com</p>
                 </div>
@@ -75,14 +110,21 @@
                 </div>
 
                 <div class="contactWidth">
-                    <div class="icons"><a href="https://www.linkedin.com/in/chitaranjan-pradhan/" target=”_blank”><i class="fab fa-linkedin-in"></i></a></div>
+                    <div class="icons"><a href="https://www.linkedin.com/in/chitaranjan-pradhan/" target=”_blank”><i
+                                class="fab fa-linkedin-in"></i></a></div>
                     <h3>LINKEDIN</h3>
                     <p></p>
                 </div>
-
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Dot NET', 'C#', 'Entity Framework', 'LINQ', 'Angular', 'Typescript', 'SQL Server'],
+            typeSpeed: 100,
+        });
+    </script>
 </body>
 
 </html>
