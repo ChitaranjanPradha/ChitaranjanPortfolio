@@ -249,3 +249,7 @@ a {
 .expRight {
     width: 30%;
 }
+
+.expRight b {
+    font-size: unset;
+}
